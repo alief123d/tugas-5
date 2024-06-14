@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Berlatih Fungsi</h1>
+    <h3>Contoh Soal</h3>
+    <div id="contohJawaban"></div>
+    <h3>Soal No.1</h3>
+    <div id="jawaban1">
+    </div>
+    <h3>Soal No.2</h3>
+    <div id="jawaban2">
+    </div>
+    <h3>Soal No.3</h3>
+    <div id="jawaban3">
+    </div>
+
+    
+</body>
+<script>
+    function tampilkan(){
+        document.getElementById("contohJawaban").innerHTML = 'aku tampil';
+    }
+    tampilkan()
+
+    function teriak(){
+        document.getElementById("jawaban1").innerHTML = 'halo function!';
+    }
+    teriak()
+
+    function kalikan(num1, num2){
+        return num1 * num2
+    }
+    document.getElementById("jawaban2").innerHTML = kalikan(2, 2)
+
+    function buatKalimat(nama, umur, alamat, hobi){
+        return "nama saya " + nama + " umur saya " + umur + " alamat saya " + alamat + " hobi saya " + hobi
+    }
+    var name = "alief"; 
+    var age = 16; 
+    var address = "Jln. air hitam";
+    var hobby = "gambar";
+    document.getElementById("jawaban3").innerHTML = buatKalimat(name, age, address, hobby);
+</script>
+</html>
